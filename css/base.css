@@ -1,9 +1,10 @@
 :root {
     /* colors pallete */
-    --navbar: #f5f5f5;
+    --navbar:   #f5f5f5;
     --nav-link: #666666;
+    --nav-menu: #f5f5f5;
     --nav-btn:  #666666;
-    --surface: #ffffff;
+    --surface:  #ffffff;
 
 
     /* font size */
@@ -63,10 +64,17 @@ body {
 header {
 
     nav[aria-label="main menu"] {
-        display: flex;
-        justify-content: space-between;
-        max-width: 64rem;
             background-color: var(--navbar);
+    }
+
+    .nav-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: clamp(1rem, 1vw, 2rem);
+        padding-bottom: clamp(1rem, 1vw, 2rem);
+        max-width: 64rem;
             margin: 0 auto;
 
     }
@@ -74,6 +82,7 @@ header {
 
 /*** nav brand ***/
     .nav-brand-box {
+        display: flex;
         max-width: 2rem; max-height: 2rem;
     }
 
@@ -87,6 +96,7 @@ header {
     .nav-link-list {
         display: flex;
         column-gap: 2rem;
+        flex-wrap: wrap;
     }
 
     .nav-link-list li {
@@ -97,6 +107,7 @@ header {
 
     .nav-social-list {
         display: flex;
+        align-items: center;
         column-gap: 1rem;
     }
 
@@ -111,15 +122,38 @@ header {
     .nav-action {
         display: flex;
         column-gap: 1rem;
+        flex-wrap: wrap;
     }
 
 
-
-
-
+/*** mainMenu ***/
     #mainMenu {
-        display: none;
+        flex-direction: column;
+            background-color: var(--nav-menu);
+            border: none;
+            top: 4rem;
+            left: auto;
+            width: 20rem;
     }
+
+    .menu-link-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-link-list li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-social-list {
+        display: flex;
+        column-gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 }
 
@@ -127,13 +161,33 @@ header {
 
 /*** 5. FEATURING ***/
 /* link */
-.nav-link-list li a {
+.nav-link-list li a,
+.menu-link-list li a {
         font-weight: 400;
         color: var(--nav-link);
 }
 
+.menu-link-list li a {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.menu-social-list li a {
+    display: flex;
+    padding: 1rem 0;
+}
+
+/* link img */
+.nav-social-list li a {
+    display: flex;
+}
+
+
 /* button */
 .nav-action button {
+    display: flex;
     padding: .25rem;
     border: none;
     border-radius: 50%;
@@ -142,17 +196,41 @@ header {
         cursor: pointer;
 }
 
+.nav-action:last-child {
+    display: none;
+}
+
 
 
 /*** 6. RESPONSIVE ***/
 /* laptop */
 @media only screen and (max-width: 64rem) {
 
+    header {
+
+        .nav-wrapper {
+            padding-left: clamp(.5rem, 1vw, 1rem);
+            padding-right: clamp(.5rem, 1vw, 1rem);
+        }
+
+    }
 }
 
 
 /* tablet */
 @media only screen and (max-width: 48rem) {
+
+    header {
+
+        .nav-links {
+            display: none;
+        }
+
+        .nav-action:last-child {
+            display: flex;
+        }
+
+    }
 
 }
 

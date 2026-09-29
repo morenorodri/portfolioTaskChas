@@ -18,24 +18,60 @@
     
     <header>
         <nav aria-label="main menu">
-
-            <!-- brandmark logo -->
-            <a href="/" class="nav-brand-box">
-                <img src="./img/icon/face-icon.svg" alt="student - homepage">
-            </a>
+            <div class="nav-wrapper">
+                <!-- brandmark logo -->
+                <a href="/" class="nav-brand-box">
+                    <img src="./img/icon/face-icon.svg" alt="student - homepage">
+                </a>
             
 
-            <!-- links for page categories and social media -->
-            <div class="nav-links">
-                <ul class="nav-link-list">
-                    <li><a href="#"> home  </a></li>
-                    <li><a href="#"> about me</a></li>
+                <!-- links for page categories and social media -->
+                <div class="nav-links">
+                    <ul class="nav-link-list">
+                        <li><a href="#"> home  </a></li>
+                        <li><a href="#"> about me</a></li>
+                        <li><a href="#"> tech stacks </a></li>
+                        <li><a href="#"> projects </a></li>
+                        <li><a href="#"> contact </a></li>
+                    </ul>
+
+                    <ul class="nav-social-list">
+                        <li><a href="#" aria-label="linkedin profile">
+                            <img src="./img/logo/github-logo.svg" alt="" aria-hidden="true">
+                        </a></li>
+                        <li><a href="#" aria-label="github profile">
+                            <img src="./img/logo/linkedin-logo.svg" alt="" aria-hidden="true">
+                        </a></li>
+                        <li><a href="#" aria-label="instagram profile">
+                            <img src="./img/logo/x-logo.svg" alt="" aria-hidden="true">
+                        </a></li>
+                    </ul>
+                </div>
+
+
+                <!-- buttons for theme mode and drop menu action -->
+                <div class="nav-action">
+                    <button type="button" aria-label="toggle the dropdown menu">
+                        <img src="./img/icon/moon-icon.svg" alt="" aria-hidden="true"> 
+                    </button>      
+                    <button type="button" aria-label="toggle the dropdown menu" popovertarget="mainMenu">
+                        <img src="./img/icon/menu-icon.svg" alt="" aria-hidden="true"> 
+                    </button>      
+                </div>                
+            </div>
+
+
+            <!-- dropdown menu includes links for page categories and social media -->
+            <div id="mainMenu" class="menu-links" popover="auto">
+                <ul class="menu-link-list">
+                    <li><a href="#"> home </a></li>
+                    <li><a href="#"> about me </a></li>
                     <li><a href="#"> tech stacks </a></li>
                     <li><a href="#"> projects </a></li>
                     <li><a href="#"> contact </a></li>
                 </ul>
 
-                <ul class="nav-social-list">
+                <ul class="menu-social-list">
                     <li><a href="#" aria-label="linkedin profile">
                         <img src="./img/logo/github-logo.svg" alt="" aria-hidden="true">
                     </a></li>
@@ -47,42 +83,7 @@
                     </a></li>
                 </ul>
             </div>
-
-
-            <!-- buttons for theme mode and drop menu action -->
-            <div class="nav-action">
-                <button type="button" aria-label="toggle the dropdown menu">
-                    <img src="./img/icon/moon-icon.svg" alt="" aria-hidden="true"> 
-                </button>      
-                <button type="button" aria-label="toggle the dropdown menu">
-                    <img src="./img/icon/menu-icon.svg" alt="" aria-hidden="true"> 
-                </button>      
-            </div>
         </nav>
-
-
-        <!-- dropdown menu includes links for page categories and social media -->
-        <div id="mainMenu" class="nav-links">
-            <ul class="menu-link-list">
-                <li><a href="#"> home </a></li>
-                <li><a href="#"> about me </a></li>
-                <li><a href="#"> tech stacks </a></li>
-                <li><a href="#"> projects </a></li>
-                <li><a href="#"> contact </a></li>
-            </ul>
-
-            <ul class="menu-social-list">
-                <li><a href="#" aria-label="linkedin profile">
-                    <img src="./img/logo/github-logo.svg" alt="" aria-hidden="true">
-                </a></li>
-                <li><a href="#" aria-label="github profile">
-                    <img src="./img/logo/linkedin-logo.svg" alt="" aria-hidden="true">
-                </a></li>
-                <li><a href="#" aria-label="instagram profile">
-                    <img src="./img/logo/x-logo.svg" alt="" aria-hidden="true">
-                </a></li>
-            </ul>
-        </div>
     </header>
 
 </body>
