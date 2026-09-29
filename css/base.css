@@ -4,8 +4,10 @@
     --nav-link: #666666;
     --nav-menu: #f5f5f5;
     --nav-btn:  #666666;
-    --t-text:   #42446E;
+    --t-txt:    #42446E;
     --pic-fr:   #E70FAA;
+    --foot-b:   #f5f5f5;
+    --foot-txt: #A7A7A7;
     --surface:  #ffffff; 
 
 
@@ -50,13 +52,16 @@ html {
 
 
 body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100dvh;
+
         /* standard font pack for the whole project */
         font-family:        "Poppins", sans-serif;
         font-size:          1rem;
         font-weight:        300;
         line-height:        1;
         background-color:   var(--surface);
-
 }
 
 
@@ -78,7 +83,6 @@ header {
         padding-bottom: clamp(1rem, 1vw, 2rem);
         max-width: 64rem;
         margin: 0 auto;
-
     }
 
 
@@ -156,12 +160,38 @@ header {
         align-items: center;
     }
 
-
 }
 
 
 
+footer {
+
+    .main-footer {
+            border-top: .25rem solid var(--foot-b);
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        padding-top: clamp(2rem, 2vw, 4rem);
+        padding-bottom: clamp(2rem, 2vw, 4rem);
+        max-width: 64rem;
+        margin: 0 auto;
+    }
+
+}
+
+
 /*** 5. FEATURING ***/
+/* text */
+.footer-wrapper p {
+        font-weight: 400;
+        text-align: start;
+        line-height: 1.5;
+        color: var(--foot-txt);
+}
+
 /* link */
 .nav-link-list li a,
 .menu-link-list li a {
@@ -211,8 +241,17 @@ header {
     header {
 
         .nav-wrapper {
-            padding-left: clamp(.5rem, 1vw, 1rem);
-            padding-right: clamp(.5rem, 1vw, 1rem);
+            padding-left: clamp(.5rem, 10vw, 1rem);
+            padding-right: clamp(.5rem, 10vw, 1rem);
+        }
+
+    }
+
+    footer {
+
+        .footer-wrapper {
+            padding-left: clamp(.5rem, 10vw, 1rem);
+            padding-right: clamp(.5rem, 10vw, 1rem);
         }
 
     }
