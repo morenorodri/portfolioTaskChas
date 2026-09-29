@@ -4,7 +4,9 @@
     --nav-link: #666666;
     --nav-menu: #f5f5f5;
     --nav-btn:  #666666;
-    --surface:  #ffffff;
+    --t-text:   #42446E;
+    --pic-fr:   #E70FAA;
+    --surface:  #ffffff; 
 
 
     /* font size */
@@ -75,7 +77,7 @@ header {
         padding-top: clamp(1rem, 1vw, 2rem);
         padding-bottom: clamp(1rem, 1vw, 2rem);
         max-width: 64rem;
-            margin: 0 auto;
+        margin: 0 auto;
 
     }
 
