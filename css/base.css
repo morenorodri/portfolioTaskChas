@@ -1,5 +1,6 @@
 :root {
     /* colors pallete */
+    /* header/nav */
     --navbar:   #f5f5f5;
     --nav-link: #666666;
     --nav-menu: #f5f5f5;
@@ -8,6 +9,14 @@
     --pic-fr:   #E70FAA;
     --foot-b:   #f5f5f5;
     --foot-txt: #A7A7A7;
+
+    /* about */
+    --bout-x:   #f5f5f5;
+    --x-bdr:    #666666;
+    --bout-t:   #666666;
+    --s-cornb:  #90ee90;
+    --bout-st:  #A7A7A7;
+    
     --surface:  #ffffff; 
 
 

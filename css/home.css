@@ -46,8 +46,8 @@ h1 {
     main {
 
         .display-wrapper {
-            padding-left: clamp(.5rem, 1vw, 1rem);
-            padding-right: clamp(.5rem, 1vw, 1rem);
+            padding-left: clamp(.5rem, 5vw, 5rem);
+            padding-right: clamp(.5rem, 5vw, 5rem);
         }
 
     }

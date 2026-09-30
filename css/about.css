@@ -1,32 +1,210 @@
-@import url(./base.css);
+@import url(/css/base.css);
+
 
 /*** 4. BLOCK ***/
+main {
+    padding: 8rem 0;
+        background-color: var(--surface);
+
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: clamp(4rem, 10vw, 8rem); 
+        justify-content: center;
+            max-width: 64rem;
+            margin: 0 auto;
+    }
+
+/*** artical ***/
+    .about {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        max-width: 40rem;
+    }
 
 
 
+/*** section ***/
+    section { 
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        max-width: 40rem;
+    }
+
+/*** about work ***/
+    .about-work-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: clamp(2rem, 10vw, 4rem);
+    }
+
+    .about-work-list li {
+            cursor: pointer;
+    }
+
+    .about-work-list li details summary {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        border-bottom: .25rem solid var(--x-bdr);
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        padding: 1rem;
+            background-color: var(--bout-x);
+            overflow: hidden;
+    }
+
+
+    .about-work-list .role {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    .about-work-list .details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-work-list .details .address {
+        display: flex;
+        column-gap: 1rem;
+    }
+
+    .about-work-list .details .date {
+        display: flex;
+            color: var(--bout-st);
+    }
+
+}
 
 
 /*** 5. FEATURING ***/
-/* headline */
+/* title */
+h1 {
+        font-size: clamp(1rem, 8vw, 2.5rem);
+        font-weight: 700;
+        color: var(--t-txt);
+}
+
+h2 {
+        font-size: clamp(1rem, 6vw, 2rem);
+        font-weight: 600;
+        color: var(--t-txt);
+}
 
 
+/* paragraph */
+article p {
+        font-weight: 400;
+        line-height: 1.5;
+}
 
+.about-work-list .role strong {
+        font-size: clamp(1rem, 5vw, 1.25rem);
+        font-weight: 400;
+        color: var(--bout-t);
+}
+
+.about-work-list .details .address span {
+        color: var(--bout-st);
+}
+
+.about-work-list .details .date time {
+        color: var(--bout-st);
+}
+
+.about-work-list li p {
+    padding: 1rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+        font-weight: 400;
+        line-height: 1.5;    
+        background-color: var(--bout-x);
+}
+
+
+/*** icon ***/
+.about-work-list .details .address img {
+    max-width: 1rem; max-height: 1rem;
+}
+
+.about-work-list .details .date img {
+    max-width: 1rem; max-height: 1rem;
+}
+
+
+/*** others ***/
+.about-work-list .role span {
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+        font-weight: 500;
+        color: var(--bout-t);
+        background-color: var(--s-cornb);
+}
 
 
 /*** 6. RESPONSIVE ***/
 /* laptop */
 @media only screen and (max-width: 64rem) {
 
+    main {
+
+        .about, .work-list {
+            padding-left: clamp(.5rem, 5vw, 5rem);
+            padding-right: clamp(.5rem, 5vw, 5rem);
+        }
+
+    }
 }
 
 
 /* tablet */
 @media only screen and (max-width: 48rem) {
 
+    main {
+
+        .about {
+            margin: 0 auto;
+        }
+
+        .work-list {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .about-work-list .role {
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+
+        .about-work-list .details .address {
+        flex-direction: column;
+        row-gap: 1rem;
+
+        }
+
+        h2 {
+                text-align: center;
+        }
+
+    }
 }
 
 
 /* mobile */
 @media only screen and (max-width: 26.5625rem) {
+
+    main {
+
+        .about-work-list .details {
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+
+    }
 
 }
