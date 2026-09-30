@@ -69,6 +69,7 @@ body {
 /*** 4. SHARED BLOCK ***/
 /* header */
 header {
+    user-select: none;
 
     nav[aria-label="main menu"] {
             background-color: var(--navbar);

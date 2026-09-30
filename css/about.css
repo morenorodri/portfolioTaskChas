@@ -1,0 +1,32 @@
+@import url(./base.css);
+
+/*** 4. BLOCK ***/
+
+
+
+
+
+/*** 5. FEATURING ***/
+/* headline */
+
+
+
+
+
+/*** 6. RESPONSIVE ***/
+/* laptop */
+@media only screen and (max-width: 64rem) {
+
+}
+
+
+/* tablet */
+@media only screen and (max-width: 48rem) {
+
+}
+
+
+/* mobile */
+@media only screen and (max-width: 26.5625rem) {
+
+}
